@@ -23,6 +23,7 @@ https://github.com/zalando/skipper/blob/master/LICENSE
 package net
 
 import (
+	"encoding/base64"
 	"fmt"
 	"io"
 	"net/http"
@@ -30,6 +31,7 @@ import (
 	"time"
 
 	"github.com/Masterminds/log-go"
+
 	"github.com/thmeitz/ksqldb-go/internal"
 )
 
@@ -76,6 +78,8 @@ func NewHTTPClient(options Options, logger log.Logger) (Client, error) {
 		options.BaseUrl = DefaultBaseUrl
 	}
 
+	options.BasicAuthToken = base64.StdEncoding.EncodeToString([]byte(options.Credentials.Username + ":" + options.Credentials.Password))
+
 	if uri, err = internal.GetUrl(options.BaseUrl); err != nil {
 		return cl, fmt.Errorf("%+w", err)
 	}
@@ -103,6 +107,7 @@ func (c *Client) Close() {
 
 // Do delegates the given http.Request to the underlying http.Client
 func (c *Client) Do(req *http.Request) (*http.Response, error) {
+	req.Header.Set("Authorization", "Basic "+c.options.BasicAuthToken)
 	return c.client.Do(req)
 }
 
@@ -124,6 +129,5 @@ func (c *Client) Post(url, contentType string, body io.Reader) (*http.Response, 
 		return nil, err
 	}
 	req.Header.Set("Content-Type", contentType)
-
 	return c.Do(req)
 }

@@ -46,6 +46,8 @@ type Options struct {
 	BaseUrl string
 	// Credentials for BaseAuth remote user
 	Credentials Credentials
+	// Credentials for BaseAuth remote user
+	BasicAuthToken string
 	// AllowHTTP
 	AllowHTTP bool
 	// DisableKeepAlives see https://golang.org/pkg/net/http/#Transport.DisableKeepAlives
