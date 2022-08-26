@@ -20,7 +20,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/thmeitz/ksqldb-go"
+	"github.com/DinoShambar/ksqldb-go"
 )
 
 func TestResponseError_ErrorMessage(t *testing.T) {

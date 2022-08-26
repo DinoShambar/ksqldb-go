@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/thmeitz/ksqldb-go"
-	"github.com/thmeitz/ksqldb-go/net"
+	"github.com/DinoShambar/ksqldb-go"
+	"github.com/DinoShambar/ksqldb-go/net"
 )
 
 var options = net.Options{

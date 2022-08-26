@@ -21,8 +21,8 @@ import (
 	"github.com/Masterminds/log-go"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/thmeitz/ksqldb-go"
-	"github.com/thmeitz/ksqldb-go/net"
+	"github.com/DinoShambar/ksqldb-go"
+	"github.com/DinoShambar/ksqldb-go/net"
 )
 
 // infoCmd represents the info command

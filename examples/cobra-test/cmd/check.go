@@ -22,7 +22,7 @@ import (
 	"github.com/Masterminds/log-go"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/thmeitz/ksqldb-go/parser"
+	"github.com/DinoShambar/ksqldb-go/parser"
 )
 
 // checkCmd represents the check command

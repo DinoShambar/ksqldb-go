@@ -20,7 +20,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/thmeitz/ksqldb-go/net"
+	"github.com/DinoShambar/ksqldb-go/net"
 )
 
 func TestClient_NotNil(t *testing.T) {

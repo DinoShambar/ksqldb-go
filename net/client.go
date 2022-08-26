@@ -32,7 +32,7 @@ import (
 
 	"github.com/Masterminds/log-go"
 
-	"github.com/thmeitz/ksqldb-go/internal"
+	"github.com/DinoShambar/ksqldb-go/internal"
 )
 
 const (

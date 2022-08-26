@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/thmeitz/ksqldb-go/parser"
+	"github.com/DinoShambar/ksqldb-go/parser"
 )
 
 // Pull queries are like "traditional" RDBMS queries in which

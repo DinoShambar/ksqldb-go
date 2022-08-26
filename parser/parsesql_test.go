@@ -20,7 +20,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/thmeitz/ksqldb-go/parser"
+	"github.com/DinoShambar/ksqldb-go/parser"
 )
 
 func TestParseKSQL_Error(t *testing.T) {

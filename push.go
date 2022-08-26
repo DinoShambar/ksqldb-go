@@ -25,7 +25,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/thmeitz/ksqldb-go/parser"
+	"github.com/DinoShambar/ksqldb-go/parser"
 )
 
 // Push queries are continuous queries in which new events

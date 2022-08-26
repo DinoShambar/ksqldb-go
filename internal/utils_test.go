@@ -20,7 +20,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"github.com/thmeitz/ksqldb-go/internal"
+	"github.com/DinoShambar/ksqldb-go/internal"
 )
 
 var tests = []struct {

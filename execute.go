@@ -29,8 +29,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/thmeitz/ksqldb-go/internal"
-	"github.com/thmeitz/ksqldb-go/parser"
+	"github.com/DinoShambar/ksqldb-go/internal"
+	"github.com/DinoShambar/ksqldb-go/parser"
 )
 
 type SessionVariablesMap map[string]interface{}

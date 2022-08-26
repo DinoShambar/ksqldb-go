@@ -20,7 +20,7 @@ package ksqldb
 import (
 	"context"
 
-	"github.com/thmeitz/ksqldb-go/net"
+	"github.com/DinoShambar/ksqldb-go/net"
 )
 
 type NewClientFactory interface {

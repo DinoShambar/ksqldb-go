@@ -25,8 +25,8 @@ import (
 
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
-	"github.com/thmeitz/ksqldb-go"
-	mocknet "github.com/thmeitz/ksqldb-go/mocks/net"
+	"github.com/DinoShambar/ksqldb-go"
+	mocknet "github.com/DinoShambar/ksqldb-go/mocks/net"
 )
 
 func TestExecOptions_SanitizeQuery(t *testing.T) {
